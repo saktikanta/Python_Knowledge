@@ -6,7 +6,7 @@ Type is nothing but called template of an object.
 The builtin calsses have their own types.
 
 User-defined classes can inharite their types
-fron the builtin classes or the generic type.
+from the builtin classes or the generic type.
 
 The type function can display the type of an object and can also used to define a new type.
 
