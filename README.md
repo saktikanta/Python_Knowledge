@@ -49,14 +49,14 @@ type_inst = a_type()
 print('The Type of a_type is: ', type(a_type))
 print('The Type of type_inst is: ', type(type_inst))
 print('Class variable type_inst.start is:', type_inst.start)
-print('calling type_inst.a_method() returns:', type_inst.a_method())
+print('Calling type_inst.a_method() returns:', type_inst.a_method())
 ```
 result:
 ```pyton
 The Type of a_type is:  <class 'type'>
 The Type of type_inst is:  <class '__main__.a_type'>
 Class variable type_inst.start is: 1
-calling type_inst.a_method() returns: This is an instance of <class '__main__.a_type'>
+Calling type_inst.a_method() returns: This is an instance of <class '__main__.a_type'>
 ```
 
 The below print statement also gives the same result
@@ -77,14 +77,14 @@ basic_inst = basic()
 print('The Type of a_type is: ', type(basic))
 print('The Type of basic_inst is: ', type(basic_inst))
 print('Class variable basic_inst.start is:', basic_inst.start)
-print('calling basic_inst.a_method() returns:', basic_inst.a_method())
+print('Calling basic_inst.a_method() returns:', basic_inst.a_method())
 ```
 result:
 ```pyton
 The Type of a_type is:  <class 'type'>
 The Type of basic_inst is:  <class '__main__.basic'>
 Class variable basic_inst.start is: 1
-calling basic_inst.a_method() returns: This is an instance of <class '__main__.basic'>
+Calling basic_inst.a_method() returns: This is an instance of <class '__main__.basic'>
 ```
 
 
