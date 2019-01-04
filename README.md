@@ -21,7 +21,11 @@ instead we use class statement to do so.
 print('The type of 1 is:', type(1))
 print('The type of [] is:', type([]))
 ```
-
+result:
+```pyton
+The type of 1 is: <class 'int'>
+The type of [] is: <class 'list'>
+```
 ### Type function used to define a type
 below is the basic defination of type
 ```python
@@ -29,6 +33,11 @@ a_class = type('a_class',(),{})
 print('The Type of a_type is: ', type(a_class))
 an_inst = a_class()
 print('The Type of an_inst is: ', type(an_inst))
+```
+result:
+```pyton
+The Type of a_type is:  <class 'type'>
+The Type of an_inst is:  <class '__main__.a_class'>
 ```
 
 ### Below is the type defination with attributes
@@ -41,6 +50,13 @@ print('The Type of a_type is: ', type(a_type))
 print('The Type of type_inst is: ', type(type_inst))
 print('Class variable type_inst.start is:', type_inst.start)
 print('calling type_inst.a_method() returns:', type_inst.a_method())
+```
+result:
+```pyton
+The Type of a_type is:  <class 'type'>
+The Type of type_inst is:  <class '__main__.a_type'>
+Class variable type_inst.start is: 1
+calling type_inst.a_method() returns: This is an instance of <class '__main__.a_type'>
 ```
 
 print('The Type of a_type() is: ', type(a_type()))
@@ -56,9 +72,16 @@ class basic():
 
 basic_inst = basic()
 print('The Type of a_type is: ', type(basic))
-print('The Type of type_inst is: ', type(basic_inst))
-print('Class variable type_inst.start is:', basic_inst.start)
-print('calling type_inst.a_method() returns:', basic_inst.a_method())
+print('The Type of basic_inst is: ', type(basic_inst))
+print('Class variable basic_inst.start is:', basic_inst.start)
+print('calling basic_inst.a_method() returns:', basic_inst.a_method())
+```
+result:
+```pyton
+The Type of a_type is:  <class 'type'>
+The Type of basic_inst is:  <class '__main__.basic'>
+Class variable basic_inst.start is: 1
+calling basic_inst.a_method() returns: This is an instance of <class '__main__.basic'>
 ```
 
 
