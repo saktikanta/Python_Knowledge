@@ -59,7 +59,10 @@ Class variable type_inst.start is: 1
 calling type_inst.a_method() returns: This is an instance of <class '__main__.a_type'>
 ```
 
+The below print statement also gives the same result
+
 print('The Type of a_type() is: ', type(a_type()))
+
 print('calling a_type().a_method() returns:', a_type().a_method())
 
 ### Basic class defination whic is same as above type defination
