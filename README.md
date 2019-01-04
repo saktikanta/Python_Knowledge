@@ -30,14 +30,14 @@ The type of [] is: <class 'list'>
 below is the basic defination of type
 ```python
 a_class = type('a_class',(),{}) 
-print('The Type of a_type is: ', type(a_class))
+print('The type of a_type is: ', type(a_class))
 an_inst = a_class()
-print('The Type of an_inst is: ', type(an_inst))
+print('The type of an_inst is: ', type(an_inst))
 ```
 result:
 ```pyton
-The Type of a_type is:  <class 'type'>
-The Type of an_inst is:  <class '__main__.a_class'>
+The type of a_type is:  <class 'type'>
+The type of an_inst is:  <class '__main__.a_class'>
 ```
 
 ### Below is the type defination with attributes
@@ -46,22 +46,22 @@ a_type=type('a_type',(),{'start':1,'a_method':
              lambda self: 'This is an instance of ' +
              str(self.__class__)})
 type_inst = a_type()
-print('The Type of a_type is: ', type(a_type))
-print('The Type of type_inst is: ', type(type_inst))
+print('The type of a_type is: ', type(a_type))
+print('The type of type_inst is: ', type(type_inst))
 print('Class variable type_inst.start is:', type_inst.start)
 print('Calling type_inst.a_method() returns:', type_inst.a_method())
 ```
 result:
 ```pyton
-The Type of a_type is:  <class 'type'>
-The Type of type_inst is:  <class '__main__.a_type'>
+The type of a_type is:  <class 'type'>
+The type of type_inst is:  <class '__main__.a_type'>
 Class variable type_inst.start is: 1
 Calling type_inst.a_method() returns: This is an instance of <class '__main__.a_type'>
 ```
 
 The below print statement also gives the same result
 
-print('The Type of a_type() is: ', type(a_type()))
+print('The type of a_type() is: ', type(a_type()))
 
 print('calling a_type().a_method() returns:', a_type().a_method())
 
@@ -74,15 +74,15 @@ class basic():
         return 'This is an instance of ' + str(self.__class__)
 
 basic_inst = basic()
-print('The Type of a_type is: ', type(basic))
-print('The Type of basic_inst is: ', type(basic_inst))
+print('The type of a_type is: ', type(basic))
+print('The type of basic_inst is: ', type(basic_inst))
 print('Class variable basic_inst.start is:', basic_inst.start)
 print('Calling basic_inst.a_method() returns:', basic_inst.a_method())
 ```
 result:
 ```pyton
-The Type of a_type is:  <class 'type'>
-The Type of basic_inst is:  <class '__main__.basic'>
+The type of a_type is:  <class 'type'>
+The type of basic_inst is:  <class '__main__.basic'>
 Class variable basic_inst.start is: 1
 Calling basic_inst.a_method() returns: This is an instance of <class '__main__.basic'>
 ```
