@@ -116,3 +116,90 @@ import test1
 import importlib
 importlib.reload(test1)
 ```
+# addition of object
+```python
+class Vector(object):
+    ''' A class for 2D vector which implements vector addition '''
+    def __init__(self,x,y):
+        ''' Initialize the vector object '''
+        self.x = x
+        self.y = y
+        
+    def __add__(self, other):
+        ''' Implement the mecthod for "+" operatior '''
+        x = self.x + other.x
+        y = self.y + other.y
+        return Vector(x,y)
+
+    def __repr__(self):
+        ''' Provide the usefull representation of the Vector object '''
+        return 'Vctor(' + str(self.x) + ',' + str(self.y) + ')'
+
+>>> alpha = Vector(3,4)
+>>> beta =Vector(5,6)
+>>> gama = alpha + beta
+>>> gama
+Vctor(8,10)
+>>> print(gama)
+Vctor(8,10)
+```
+# Different argument pass to function
+
+## no argument to function
+```python
+def fun1():
+    print('zero argument passed')
+fun1()
+```
+## two argument
+```python
+def fun2(a,b):
+    return a + b
+print(fun2(2,3))
+```
+## unlimited number of arguments
+```python
+def fun3(*args):
+    tot = 0
+    for arg in args:
+        tot +=arg
+    return tot
+print(fun3(3,4,5,6,7,8))
+```
+## passing a list / tuple
+```python
+var1=(1,2,3,4,5)
+print(fun3(*var1))
+```
+## passing arguments using named parameters and default arguments
+```python
+def fun4(p1,p2=3,p3=4):
+    return p1,p2,p3
+print(fun4('required one argunent')
+print(fun4('1','2','3'))
+print(fun4(p2=4,p1='9',p3='1'))
+```
+## passing dictionary
+```python
+def fun5(**kwargs):
+    for key in kwargs:
+        print(key,'->',kwargs[key])
+    return tuple(kwargs.values())
+abc = {}
+print(fun5(**abc))
+pqr={'a':'1','b':'2','c':'3'}
+print(fun5(**pqr))
+```
+output:
+
+```python
+>>> abc = {}
+>>> print(fun5(**abc))
+()
+>>> pqr={'a':'1','b':'2','c':'3'}
+>>> print(fun5(**pqr))
+a -> 1
+b -> 2
+c -> 3
+('1', '2', '3')
+```
