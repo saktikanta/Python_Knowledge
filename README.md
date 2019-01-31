@@ -209,3 +209,12 @@ c -> 3
 if __name__ == '__main__':
     print(fun1())
 ```
+
+# Command line arguments
+
+```python
+if __name__ == '__main__':
+    print(sys.argv)
+    if len(sys.argv) > 1: # one argument passed
+        programname,arg1 = sys.argv[:2]
+```
