@@ -87,5 +87,32 @@ Class variable basic_inst.start is: 1
 Calling basic_inst.a_method() returns: This is an instance of <class '__main__.basic'>
 ```
 
+# Steps to import python module into python shell 
+### let say I wnat to import c:\user\sakti\test1.py into python shell
 
-    
+### Check python path environment variable 
+``` python
+import os
+os.environ['PYTHONPATH']
+```
+### To check current system variable 
+```python
+import sys
+sys.path
+```
+### To include 
+```python
+sys.path.append('c:\\user\\sakti\\')
+import test1
+```
+### or
+```python
+os.chdir('c:\\user\\sakti\\')
+import test1
+```
+### however the above chdir wont reflect the change made in the module later even import the moduel post the change aswell.
+### In that case you have to reload the library to reflect the change in the module as like below.
+```python
+import importlib
+importlib.reload(test1)
+```
