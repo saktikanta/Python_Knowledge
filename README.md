@@ -204,7 +204,7 @@ c -> 3
 ('1', '2', '3')
 ```
 
-### In the script to call a function up on direct execution of the script and not to call it upon import, then use the \_\_name\_\_ == '\_\_main\_\_' condition
+### To call a function in the script upon direct execution of the script and not to call it upon import, then use the \_\_name\_\_ == '\_\_main\_\_' condition
 ```python
 if __name__ == '__main__':
     print(fun1())
