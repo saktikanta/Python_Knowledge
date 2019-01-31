@@ -203,3 +203,9 @@ b -> 2
 c -> 3
 ('1', '2', '3')
 ```
+
+# In the script to call a function up on direct execution of the script and not to call it upon import, then use the __name__ == '__main__' condition
+```python
+if __name__ == '__main__':
+    print(fun1())
+```
