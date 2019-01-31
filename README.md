@@ -215,6 +215,6 @@ if __name__ == '__main__':
 ```python
 if __name__ == '__main__':
     print(sys.argv)
-    if len(sys.argv) > 1: # one argument passed
+    if len(sys.argv) > 1: # check one or more argument passed
         programname,arg1 = sys.argv[:2]
 ```
